@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1222407ba2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        #slot{
+            margin: 0 auto;
+            position: relative;
+            width: 812px;
+            height: 375px;
+            background: #0D0018;
+            border-radius: 32px;            
+        }
+               
+        #indicator{
+            position: absolute;
+            width: 134px;
+            height: 5px;
+            left: calc(50% - 134px/2 - 0px);
+            bottom: 8px;
+            background: #EAEAEA;
+            border-radius: 100px;
+        }
+        .value{
+            position: absolute;
+            width: 89px;
+            height: 24px;
+            left: 94px;     
+            top: 32px;       
+            background: #575757; 
+            border: 1px solid #DDDDDD;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+       
+        .circle1, .circle2{
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 94px;
+            top: 32px;
+            border-radius: 50%;
+        }
+        .center{
+            position: absolute;
+            left: 8px;
+            top: 6px;
+            color: #FEBB39;
+        }
+        .circle1{
+            background-color: #FEBB3A;
+        }
+        .circle2{
+            left: 58px;
+            background-color: #8B8B8B;
+        }
+
+        i.before{
+           position: absolute;
+           left: 33px;
+           top: 32px;          
+        }
+        i.left{
+            position: absolute;
+            left: 62px;
+            top: 36PX;
+            color: #ffffff;
+        }  
+        i.right{
+            position: absolute;
+            left: 766px;
+            top: 34PX;
+            color: #ffffff;
+        }              
+        .total_wins{
+            position: absolute;
+            left: 346px;
+            top: 297px;
+            width: 120px;
+            height: 44px;
+            background: #FFFFFF;
+            border: 1px solid #222222;
+            box-sizing: border-box;
+            border-radius: 60px;
+            
+        }
+        .text01{
+            position: absolute;
+            left: 29px;
+            top: 16px;
+            width: 62px;
+            height: 13px;            
+            font-family: SF Pro Display; 
+            font-size: 11px;
+            line-height: 13px;
+            text-align: center;
+            color: #434343;
+        }
+        .text02{
+            position: absolute;
+            left: 40px;
+            top: -15px;
+            width: 40px;
+            height: 19px;            
+            font-family: SF Pro Display; 
+            font-size: 16px;
+            /* line-height: 19px; */
+            text-align: center;
+            font-weight: bold;
+            color: #434343;
+        }
+        span{
+            position: absolute;
+            width: 36px;
+            height: 14px;
+            left: 136px;  
+            top: 37px;          
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            line-height: 14px;
+            color: #FFFFFF;
+        }
+        
+        .img_list{ 
+
+            position: absolute;
+            width: 102px;
+            height: 59px;
+            background: #4E4854;
+            border: 1px solid #6A6A6A;
+            box-sizing: border-box;
+            border-radius: 12px;
+
+        }
+        .set_img{
+            position: absolute;            
+            background-size: 100%, 100%;
+            background-blend-mode: luminosity;
+            filter: grayscale(100%);
+        }
+        .circle_icon{
+            
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 24px;
+            top: 304px;
+            border-radius: 50%;
+            background: #4E4854;
+        }
+        .icon{ 
+            position: absolute;                     
+            color: white;
+            font-size: 11px; 
+            left: 9px;
+            top: 9px;
+        }
+        .gold_value{
+            position: absolute;
+            width: 102px;
+            height: 30px;
+            left: 99px;
+            top: 304px;
+
+            background: #2C2C2C;
+            border: 1px solid #676767;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+        .text03{
+            position: absolute;
+            width: 32px;
+            height: 17px;
+            left: 35px;
+            top: -8px;
+            /* font-family: SF Pro Display;*/
+            font-size: 14px;
+            line-height: 17px; 
+            color: #FFFFFF;           
+            
+        }
+        .text04{
+            position: absolute;
+            left: 15px;
+            top: -8px; 
+            width:80px;
+            line-height: 17px;
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+        .oo_png{
+            position: absolute;
+            width: 11px;
+            height: 14px;
+            left: 22px;
+            top: 8px;
+            background-color: #243FCA ;
+            background-size: 100%, 100% ;
+        }
+      
+       
+        
+    </style>
+</head>
+<body>
+    <div id="slot">
+        
+        <div id="indicator"></div>
+        <div class="value"></div>
+        <span>56968</span>
+        
+        <div class="circle1">
+            <i class="fas fa-solid fa-dollar-sign center" style="font-size: 6px;color: white;"></i>
+        </div>
+        <div class="circle2"></div>
+        <div >
+            
+            <div class="img_list" style="left: 126px; top: 86px;">
+                <img src="111.png" class="set_img" style="width: 62px; height: 47px;left: 20px; top: 6px;">
+            </div>
+                
+            
+            <div class="img_list" style="left: 240px; top: 86px;">
+                <img src="222.png" class="set_img" style="width: 74px; height: 40px;left: 14px; top: 10px;">
+            </div>
+               
+            
+            <div class="img_list" style="left: 355px; top: 86px;">
+                <img src="333.png" class="set_img" style="width: 51px; height: 40px;left: 26px; top: 10px;">
+            </div>
+                
+            
+            <div class="img_list" style="left: 469px; top: 86px;">
+                <img src="444.png" class="set_img" style="width: 62px; height: 41px;left: 20px; top: 9px;">
+            </div>
+                
+            
+            <div class="img_list" style="left: 583px; top: 86px;">
+                <img src="111.png" class="set_img" style="width: 62px; height: 47px;left: 20px; top: 6px;">
+            </div>
+                
+        </div> 
+
+        <div >
+            
+            <div class="img_list" style="left: 126px; top: 156px;">
+                <img src="444.png" class="set_img" style="width: 62px; height: 41px;left: 20px; top: 9px;">
+            </div>
+            
+        
+            <div class="img_list" style="left: 240px; top: 156px;">
+                <img src="555.png" class="set_img" style="width: 80px; height: 40px;left: 11px; top: 10px;">
+            </div>
+           
+        
+            <div class="img_list" style="left: 355px; top: 156px;">
+                <img src="666.png" class="set_img" style="width: 73px; height: 46px;left: 15px; top: 6px;">
+            </div>
+            
+        
+            <div class="img_list" style="left: 469px; top: 156px;">
+                <img src="111.png" class="set_img" style="width: 62px; height: 47px;left: 20px; top: 6px;">
+            </div>
+            
+        
+            <div class="img_list" style="left: 583px; top: 156px;">
+                <img src="444.png" class="set_img" style="width: 62px; height: 41px;left: 20px; top: 9px;">
+            </div>
+            
+        </div> 
+
+        <div >
+            
+            <div class="img_list" style="left: 126px; top: 227px;">
+                <img src="444.png" class="set_img" style="width: 62px; height: 41px;left: 20px; top: 9px;">
+            </div>
+            
+        
+            <div class="img_list" style="left: 240px; top: 227px;">
+                <img src="111.png" class="set_img" style="width: 62px; height: 47px;left: 20px; top: 6px;">
+            </div>
+           
+        
+            <div class="img_list" style="left: 355px; top: 227px;">
+                <img src="333.png" class="set_img" style="width: 51px; height: 40px;left: 26px; top: 10px;">
+            </div>
+            
+        
+            <div class="img_list" style="left: 469px; top: 227px;">
+                <img src="111.png" class="set_img" style="width: 62px; height: 47px;left: 20px; top: 6px;">
+            </div>
+            
+        
+            <div class="img_list" style="left: 583px; top: 227px;">
+                <img src="111.png" class="set_img" style="width: 62px; height: 47px;left: 20px; top: 6px;">
+            </div>
+            
+        </div> 
+
+        <i class="fa fa-regular fa-angle-left before" style="font-size: 22px; color: white;"></i>
+        <i class="fas fa-solid fa-user left" style="font-size:18px;"></i> 
+        <i class="fa fa-gear right" style="font-size: 20px;"></i> 
+        
+        <div class="total_wins">
+            <p class="text01">Total Wins</p>
+            <p class="text02">500K</p>
+        </div>
+        
+        <div class="circle_icon">
+            <i class="fas fa-solid fa-question icon" ></i>
+        </div>
+        <div class="circle_icon" style="left: 64px;">
+            <i class="fas fa-regular fa-minus icon" style="font-size: 15px;""></i>
+        </div>
+        <div class="gold_value">
+            <p class="text03">500k</p>
+        </div>
+        <div class="circle_icon" style="left: 206px;">
+            <i class="fas fa-regular fa-plus icon" style="font-size: 15px;"></i>
+        </div>
+        <div class="gold_value" style="left: 592px; width: 92px;">
+            <p class="text04">MAX BET</p>
+        </div>
+        <div class="gold_value" style="left: 694px; width: 94px;background-color: #243FCA ;">
+            <img src="000.png" class="oo_png">
+            <p class="text04" style="left: 37px;">SPIN</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

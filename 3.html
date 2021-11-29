@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1222407ba2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        
+       /* *{
+           margin: 0 auto;
+        } */
+        #info{    
+            display: inline-block;                  
+            position: relative;
+            height:12px;
+            font-size: 5px;
+            color: gray;            
+        }
+        #box{                   
+            position: absolute;
+            width: 812px;
+            height: 375px;     
+            left: -0.5px;       
+            background-color:  #0D0018;  
+            border-radius: 30px;             
+        }
+        
+        #indicator{
+            position: absolute;            
+            width: 134px;
+            height: 5px; 
+            top: 372px; 
+            left: 334px;                                  
+            background-color: #EAEAEA;
+            border-radius: 100px;
+        }
+        .value{
+            position: absolute;
+            width: 89px;
+            height: 24px;
+            left: 60px;     
+            top: 44px;       
+            background: #575757; 
+            border: 1px solid #DDDDDD;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+        .circle1, .circle2{
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 60px;
+            top: 44px;
+            border-radius: 50%;
+        }
+        .circle1{
+            background-color: #FEBB3A;
+        }
+        .circle2{
+            left: 20px;
+            background-color: #8B8B8B;
+        }
+        i.left{
+            position: absolute;
+            left: 24px;
+            top: 48PX;
+            color: #ffffff;
+        }  
+        i.right{
+            position: absolute;
+            left: 766px;
+            top: 48PX;
+            color: #ffffff;
+        }              
+        
+        span{
+            position: absolute;
+            width: 36px;
+            height: 14px;
+            left: 102px;  
+            top: 49px;          
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* font-style: normal;
+            font-weight: normal; */
+            font-size: 12px;
+            line-height: 14px;
+            color: #FFFFFF;
+        }
+        .img_left , .img_center{
+            position: absolute;
+            width:228px;
+            height: 185px;
+            left: 158px;
+            top: 128px;           
+            background-size: 100% 100%;
+            background-image: url(11.png);  
+            background-blend-mode: saturation;          
+            border: 1px solid #595959;
+            box-sizing: border-box;
+            border-radius: 12px; 
+            filter: grayscale(100%) ; 
+           
+        }
+        .img_left{
+            background-image: url(11.png); 
+        }
+        .img_center{
+            left: 426px;
+            background-image: url(22.png);            
+        }
+        .img_right, .img_right_under{
+            position: absolute;
+            width: 33px;
+            height: 38px;
+            left: 730px;
+            top: 280px;
+            background-blend-mode: luminosity;
+            filter: grayscale(100%)  
+        }   
+        .img_right{
+            background-image: url(33.png);
+            
+        }       
+        .img_right_under{
+            background-image: url(44.png);
+            background:  rgba(70, 59, 80, 0.3);
+        }   
+        
+        .text{
+            position: absolute;
+            width: 48px;
+            height: 14px;
+            left: 722px;
+            top: 324px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: #FFFFFF;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div id="info">Loading page
+        <div id="box"></div>
+        <div id="indicator"></div>
+        <div class="value"></div>
+        <span>56968</span>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div >
+            <div class="img_left"></div>
+            <div class="img_center"></div>
+            <div class="img_right"></div>
+            <p class="text">06:30:08</p>
+        </div>      
+        <i class="fas fa-solid fa-user left" style="font-size:18px;"></i> 
+        <i class="fa fa-gear right" style="font-size: 20px;"></i> 
+        
+        
+    </div>
+</body>
+</html>
