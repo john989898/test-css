@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style> 
+        #info{
+            display: inline-block;            
+            position: relative;
+            width: 812px;
+            height: 375px;
+            font-size: 5px;
+            color: gray;
+            
+        }
+        #box{
+            position: absolute;
+            width: 812px;
+            height: 375px;
+            left: -0.5PX;
+            background:linear-gradient(#12268E,#001746);
+            
+        }
+        #image-center{
+            position: absolute;
+            width: 235px;
+            height: 71.85px;
+            left: 289px;
+            top: 124px;
+            background-image: url(2.png);
+            background-size: 100%,100%;
+
+        }
+        #indicator{
+            position: absolute;
+            width: 134px;
+            height: 5px;    
+            left: calc(50% - 134px/2);
+            bottom: -7px;
+            background-color: #EAEAEA;
+            border-radius: 100px;
+        }
+        #text{
+            position: absolute;
+            height: 23px;
+            left: 325px;
+            top: 203px;
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-size: 17px;
+            line-height: 23px;
+            color: #D9DEE6;
+        }
+        #loading_bar_outside{
+            position: absolute;
+            width: 720px;
+            height: 28px;
+            left: 48px;
+            top: 298px;
+            border: 2px solid #EFEFEF;
+            box-sizing: border-box;
+            box-shadow: inset 0px 0px 4px #FFFFFF;
+            border-radius: 14px;
+        }
+        #loading_bar_inside{
+            position: absolute;
+            width: 545px;
+            height: 28px;
+            left: 48px;
+            top: 298px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            background: linear-gradient(90deg, #243FCA 0%, #7022D5 100%);
+        }
+        #loading_bar_text{
+            position: absolute;
+            width:812px;
+            top: 288px;
+            font-size: 14px;
+            font-style: normal;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="info">Loading
+        <div id="box"></div>
+        <div id="indicator"></div>
+        <div id="image-center"></div>
+        <p id="text">CASINO WITH HOVSE</p>
+        <div>
+            <div id="loading_bar_inside"></div>
+            <div id="loading_bar_outside"></div>
+            <p id="loading_bar_text">Loading...</p>
+        </div>
+        
+    </div>
+</body>
+</html>

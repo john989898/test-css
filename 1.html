@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style> 
+        #info{
+            display: inline-block;            
+            position: relative;
+            width: 812px;
+            height: 375px;
+            font-size: 5px;
+            color: gray;            
+        }
+        
+        #box{
+            position: absolute;
+            width: 812px;
+            height: 375px;
+            left: -0.5PX;
+            background:linear-gradient(#12268E,#001746);
+            
+        }
+        #image-center{
+            position: absolute;
+            width: 235px;
+            height: 71.85px;
+            left: 289px;
+            top: 124px;
+            background-image: url(2.png);
+            background-size: 100%,100%;
+
+        }
+        #indicator{
+            position: absolute;
+            width: 134px;
+            height: 5px;    
+            left: calc(50% - 134px/2);
+            bottom: -7px;
+            background-color: #EAEAEA;
+            border-radius: 100px;
+        }
+        #text{
+            position: absolute;
+            height: 23px;
+            left: 325px;
+            top: 203px;
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-size: 17px;
+            line-height: 23px;
+            color: #D9DEE6;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">Splash
+        <div id="box"></div>
+        <div id="indicator"></div>
+        <div id="image-center"></div>
+        <p id="text">CASINO WITH HOVSE</p>
+    </div>
+</body>
+</html>
