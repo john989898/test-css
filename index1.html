@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Profile</title>
+    <script type="text/javascript" src="https://kit.fontawesome.com/1222407ba2.js" crossorigin="anonymous"></script>
+    <script>
+
+        function closeSetMenu() {
+            document.getElementById('rect').style.top = '-1000px';
+            document.getElementById('box').style.filter = '';
+        }
+        function openSetMenu() {
+            document.getElementById('rect').style.top = '16px';
+            document.getElementById('box').style.filter = 'blur(2px)';
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <div class="indicator"></div>
+        <div class="bg_desk"></div>
+        <div id="navbar">
+            <div class="navbar-left">
+                <div class="ques">
+                    <i class="fa fa-regular fa-angle-left ques"></i>
+                </div>
+                <div class="img_set01"></div>
+                <div class="dollar_va">
+                    <div class="img_set02"></div>
+                    <span>56968</span>
+                </div>
+            </div>
+
+            <div class="navbar-right">
+                <div class="img_set03"></div>
+                <img src='./png/set.png' class="settings" onclick="openSetMenu()">
+            </div>
+            <div class="man01">
+                <img src="./png/people-1.png" alt="man01" class="man">
+                <p class="people-name">Cooper</p>
+                <div class="dollar-value">
+                    <img src="./png/dollar.png" alt="dollar" class="dollar">
+                    <p class="people-name" >5784</p>
+                </div>
+            </div>
+            <div class="man02">
+                <img src="./png/people-2.png" alt="man02" class="man">
+                <p class="people-name">Warren</p>
+                <div class="dollar-value">
+                    <img src="./png/dollar.png" alt="dollar" class="dollar">
+                    <p class="people-name" >41563</p>
+                </div>
+            </div>
+            <div class="man03">
+                <img src="./png/people-3.png" alt="man03" class="man">
+                <p class="people-name">Howard</p>
+                <div class="dollar-value">
+                    <img src="./png/dollar.png" alt="dollar" class="dollar">
+                    <p class="people-name" >15598</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="footer-left">
+                <div class="circle">
+                    <i class="fa fa-regular fa-question itype"></i>
+                </div>
+                <div class="box2">
+                    <p class="text">MIN</p>
+                </div>
+                <div class="box2">
+                    <p class="text">MAX</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="box2">
+                    <p class="text">BET</p>
+                </div>
+                <div class="box2">
+                    <p class="text">REPEAT</p>
+                </div>
+                <div class="circle">
+                    <img src="./png/chat.png" alt="chat" class="chat">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="rect">
+        <div class="exit" onclick="closeSetMenu()">&times;</div>
+
+        <h2>settings</h2>
+        <div class="flex_container">
+            <i class="fa fa-regular fa-flag flag"></i>
+            <p class="text">DISPLAY MY COUNTRY</p>
+            <div class="checkbtn">
+                <div class="cir"></div>
+            </div>
+        </div>
+        <div class="box3"></div>
+        <div class="flex_container">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M10.006 14.2344C10.006 14.5867 9.80245 14.9068 9.48387 15.0562C9.36069 15.1145 9.2287 15.1426 9.09757 15.1426C8.88992 15.1426 8.68419 15.0713 8.51802 14.9335L3.55274 10.819H0.908231C0.406716 10.8194 0 10.4125 0 9.911V6.29247C0 5.79074 0.406716 5.38403 0.908231 5.38403H3.55296L8.51824 1.26958C8.78953 1.04473 9.16572 0.996789 9.48408 1.14727C9.80245 1.29667 10.0062 1.61697 10.0062 1.96908L10.006 14.2344ZM13.4964 12.8152C13.4743 12.8167 13.453 12.8175 13.4311 12.8175C13.1912 12.8175 12.9599 12.7227 12.789 12.5516L12.6675 12.4298C12.3489 12.1118 12.3115 11.6082 12.5798 11.2466C13.26 10.3295 13.619 9.24245 13.619 8.10206C13.619 6.87546 13.2114 5.72496 12.4401 4.77481C12.1464 4.41367 12.1735 3.88915 12.5026 3.56026L12.6239 3.4388C12.8053 3.25737 13.0484 3.15849 13.3116 3.17418C13.5678 3.18708 13.807 3.30767 13.9696 3.5063C15.0394 4.81544 15.6046 6.4049 15.6046 8.10227C15.6046 9.68313 15.1048 11.1879 14.1589 12.4532C14.0009 12.6641 13.7593 12.7965 13.4964 12.8152ZM17.2514 15.622C17.0872 15.8161 16.8497 15.9326 16.5954 15.9434C16.5829 15.9438 16.5702 15.9442 16.5573 15.9442C16.3168 15.9442 16.0859 15.8492 15.915 15.6783L15.7957 15.559C15.4623 15.2258 15.4397 14.6929 15.7428 14.3322C17.2076 12.5901 18.0146 10.3777 18.0146 8.10206C18.0146 5.73507 17.1506 3.45643 15.5824 1.68597C15.2645 1.32655 15.2806 0.782468 15.619 0.442822L15.7381 0.323516C15.9148 0.145954 16.1444 0.0481446 16.4077 0.0565283C16.6577 0.0636222 16.8942 0.174115 17.0603 0.361135C18.9559 2.49532 20 5.24473 20 8.10206C20.0004 10.8513 19.0243 13.522 17.2514 15.622Z"
+                    fill="white" />
+            </svg>
+            <p class="text">SOUND</p>
+            <div class="checkbtn">
+                <div class="cir"></div>
+            </div>
+        </div>
+        <div class="box3"></div>
+        <div class="flex_container">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M10 0C15.5062 0 20 4.4941 20 10C20 15.5063 15.5059 20 10 20C4.49379 20 0 15.5059 0 10C0 4.49375 4.4941 0 10 0ZM12.9667 1.68527C13.5333 2.4093 13.9676 3.27289 14.2938 4.14102H16.5971C15.6211 3.04297 14.3763 2.18977 12.9667 1.68527ZM17.4775 5.3125H14.6726C15.0184 6.56984 15.2213 7.96391 15.2644 9.41406H18.8082C18.7095 7.91453 18.2348 6.51621 17.4775 5.3125ZM17.4775 14.6875C18.2348 13.4838 18.7095 12.0855 18.8082 10.5859H15.2644C15.2213 12.0361 15.0184 13.4302 14.6726 14.6875H17.4775ZM16.5971 15.8594H14.2938C13.9677 16.7268 13.5334 17.5905 12.9666 18.3147C14.3763 17.8102 15.6211 16.957 16.5971 15.8594ZM10.5859 18.7279C11.7358 18.3382 12.5607 16.9707 13.0325 15.8594H10.5859V18.7279ZM10.5859 14.6875H13.4542C13.8268 13.454 14.0459 12.0546 14.0921 10.5859H10.5859V14.6875ZM10.5859 9.41445H14.0921C14.0459 7.94543 13.8268 6.54602 13.4542 5.3125H10.5859V9.41445ZM10.5859 4.14102H13.0325C12.5599 3.02746 11.7348 1.66149 10.5859 1.27211V4.14102ZM3.40289 4.14062H5.70625C6.03234 3.27324 6.4666 2.40953 7.03336 1.68527C5.62371 2.18973 4.37887 3.04297 3.40289 4.14062ZM9.41406 1.27211C8.26519 1.66149 7.4402 3.02731 6.96754 4.14062H9.41406V1.27211ZM9.41406 5.3125H6.54582C6.17324 6.54602 5.95406 7.94543 5.90793 9.41406H9.41406V5.3125ZM9.41406 10.5859H5.90793C5.95406 12.0546 6.17324 13.454 6.54582 14.6875H9.41406V10.5859ZM9.41406 18.7279V15.8594H6.96754C7.44016 16.9726 8.26512 18.3385 9.41406 18.7279ZM7.03332 18.3147C6.46672 17.5907 6.03246 16.7271 5.70621 15.8594H3.40289C4.37887 16.957 5.62371 17.8103 7.03332 18.3147ZM2.52254 14.6879H5.32738C4.9816 13.4302 4.77875 12.0361 4.73563 10.5859H1.1918C1.29055 12.0855 1.76523 13.4838 2.52254 14.6879ZM1.1918 9.41406H4.73563C4.77875 7.96391 4.9816 6.56984 5.32738 5.3125H2.52254C1.76523 6.51621 1.29055 7.91453 1.1918 9.41406Z"
+                    fill="white" />
+            </svg>
+            <p class="text">LANGUAGE</p>
+            <div class="changebtn" style="position: absolute; left: 172px;">
+                <p class="txt">ENGLISH</p>
+            </div>
+            <div class="changebtn" style="background-color: #ddd;">
+                <p class="txt" style="color: black;">CHANGE</p>
+            </div>
+        </div>
+        <div class="box3"></div>
+        <div class="flex_container">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M13.0344 13.7258C13.0344 15.3883 11.6445 16.7929 9.99922 16.7929C8.3543 16.7929 6.96523 15.3883 6.96484 13.725C3.48984 13.7558 0.000390625 16.2972 0 19.9976L9.99883 19.9988L20 20C20.0004 16.5539 16.8867 13.757 13.0344 13.7258ZM6.64023 17.5527L4.32617 17.5523V16.3804L6.64062 16.3808L6.64023 17.5527Z"
+                    fill="white" />
+                <path
+                    d="M16.079 9.67461C16.079 10.3316 15.9966 10.7832 15.8114 11.1391C15.6188 11.5082 15.2165 11.9488 14.3907 11.9484H14.379V10.7766H14.3907C14.6446 10.7766 14.9071 10.7766 14.9071 9.67461L14.9075 8.29492H14.3587L14.3579 4.82969C14.3579 4.65352 14.3446 4.47773 14.3181 4.30352H14.5813C13.8572 2.43117 12.0059 1.17266 10.0013 1.17188C7.99717 1.17188 6.14377 2.43109 5.42002 4.30234H5.68018C5.65322 4.47695 5.63994 4.65273 5.63994 4.8293L5.63916 8.29414L4.51768 8.29375C4.18564 8.29375 3.9165 8.02461 3.9165 7.69219L3.91689 4.90352C3.91689 4.71367 4.00518 4.54414 4.14268 4.43398C4.82861 1.73867 7.21494 0.000390625 10.0013 0C12.7876 0.00117187 15.1735 1.73984 15.8587 4.43516C15.9966 4.54531 16.0849 4.71484 16.0849 4.90508L16.079 9.67461Z"
+                    fill="white" />
+                <path
+                    d="M11.8631 12.481L11.8627 13.7267C11.8638 14.6671 11.1162 15.5133 10.1791 15.613C9.09993 15.7188 8.13696 14.7982 8.13696 13.7259L8.13735 12.4813C8.43032 12.5735 8.76235 12.654 9.1686 12.6548H10.8307C11.237 12.654 11.5694 12.5731 11.8631 12.481Z"
+                    fill="white" />
+                <path
+                    d="M13.2086 4.86724C13.2119 4.53048 13.1438 4.19669 13.0141 3.88599C11.3519 5.27087 8.66963 5.27087 7.00745 3.88599C6.87776 4.19669 6.80959 4.53048 6.81292 4.86724L6.81213 9.13208C6.81213 10.4159 7.88588 11.4711 9.16448 11.4829H10.8571C12.1356 11.4711 13.2094 10.4159 13.2094 9.13208L13.2086 4.86724Z"
+                    fill="white" />
+                <path
+                    d="M12.2867 2.96763C11.8902 2.66138 11.3933 2.47935 10.8535 2.47974H9.16794C8.6281 2.47935 8.13123 2.66138 7.73474 2.96763C8.99638 4.00911 11.0251 4.00915 12.2867 2.96763Z"
+                    fill="white" />
+            </svg>
+            <p class="text">CONTACT US</p>
+            <div class="changebtn" style="background-color: #ddd;">
+                <p class="txt" style="color: black;">EMAIL</p>
+            </div>
+        </div>
+        <div class="box3"></div>
+        <div class="flex_container">
+            <div class="button">
+                <p class="txt">PRIVACY POLICY</p>
+            </div>
+            <div class="button" style="width: 186px;">
+                <p class="txt">TERMS & SERVICES</p>
+            </div>
+        </div>
+        <p class="t">UID: 5968463 EN</p>
+    </div>
+
+
+</body>
+
+</html>
