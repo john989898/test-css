@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binstarter</title>
+    <script type="text/javascript" src="https://kit.fontawesome.com/1222407ba2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showmenu(){
+            var check = document.getElementsById("check");
+            var menu = document.getElementById('mainmenu');
+            check.style.zIndex = '3';
+            menu.style.top = '0px'
+        }
+        function closemenu(){
+
+        }
+       
+    </script>
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="navbar-wrapper">
+            <div class="menu" onclick="showmenu()">
+                <div>
+                    <div class="menu-btn"></div>
+                    <div class="menu-btn"></div>
+                    <div class="menu-btn"></div>
+                </div>
+            </div>
+            <div  id="check" onclick="closemenu()">&times;</div>
+            <div class="logo"></div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="navbar-option" style="border: 1px solid white;">
+                            <i class="fas fa-fire itype"></i>
+                            <p>Dashboard</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="navbar-option">
+                            <i class="fas fa-fingerprint  itype"></i>
+                            <p>Pools(New)</p>
+                        </div>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="navbar-option">
+                            <i class="fas fa-fingerprint  itype"></i>
+                            <p>Pools(Old)</p>
+                        </div>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="navbar-option">
+                            <i class="fas fa-wallet  itype"></i>
+                            <p>My Allocations</p>
+                        </div>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="navbar-option">
+                            <i class="fas fa-align-left  itype"></i>
+                            <p>IDO Application</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="navbar-option">
+                            <i class="fas fa-rocket  itype"></i>
+                            <p>IDO Project</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="connect">
+                <p class="btn">Connect</p>
+            </div>
+        </div>
+        <div id="mainmenu">
+            <a href="#">
+                <div class="menu-flex" style="background-color: #111827;">
+                    <i class="fas fa-fire itype i-set"></i>
+                    <p class="font">Dashboard</p>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="menu-flex">
+                    <i class="fas fa-fingerprint  itype i-set"></i>
+                    <p class="font">Pools(New)</p>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="menu-flex">
+                    <i class="fas fa-fingerprint  itype i-set"></i>
+                    <p class="font">Pools(Old)</p>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="menu-flex">
+                    <i class="fas fa-wallet  itype i-set"></i>
+                    <p class="font">My Allocations</p>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="menu-flex">
+                    <i class="fas fa-align-left  itype i-set"></i>
+                    <p class="font">IDO Application</p>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="menu-flex">
+                    <i class="fas fa-rocket  itype i-set"></i>
+                    <p class="font">IDO Project</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="alert">
+        <div class="cir"><i class="fa-duotone fa-triangle-exclamation"></i></div>
+        <p class="txt">You are not connected to the Binance Smart Chain
+            Mainnet network. Please connect to the Binance Smart
+            Chain Mainnet network.</p>
+    </div>
+    <main>
+        <div class="flex_container">
+            <div class="flex_left">
+                <div class="first_box">
+                    <div class="value">
+                        <div class="B_border">
+                            <img src="./Binstart-png/B.png" alt="B" class="B_img">
+                        </div>
+                        <div>
+                            <P class="txt1">$2.960</P>
+                            <p class="txt2">Current <span>BSR</span> Price</p>
+                        </div>
+                    </div>
+                    <div class="value">
+                        <div class="tvl">
+                            <P class="txt3">TVL</P>
+                        </div>
+                        <div>
+                            <P class="txt1">$0.00</P>
+                            <p class="txt2">Total Value locked across all pools</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="second_box">
+                    <div class="sec_1">
+                        <div class="img_logo"></div>
+                        <div class="second_up">
+                            <P class="txt6">Buy BSR on</P>
+                            <div class="button_list">
+                                <a href="#">
+                                    <div class="button">
+                                        <img src="./Binstart-png/horse-logo.png" alt="horse" class="horse">
+                                        <p style="font-size: 12px; color: white;">Panckaeswap</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="button">
+                                        <img src="./Binstart-png/horse-logo.png" alt="horse" class="horse">
+                                        <p style="font-size: 12px; color: white;">Uniswap</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./Binstart-png/graph.png" class="graph">
+
+                </div>
+            </div>
+            <div class="flex_right">
+                <div class="txt4 doc">
+                    <p>DOCUMENTS</p>
+                </div>
+                <div class="books">
+                    <img src="./Binstart-png/ri-1.jpg" alt="White Paper" class="ri_img">
+                    <div class="txt5">
+                        <p class="txt4">White Paper(2021)</p>
+                        <p class="txt2" style="font-size: 12px;">Read about all of our services</p>
+                        <a href="">
+                            <div class="doc_btn"><i class="fa fa-solid fa-download pdf_itype"></i>
+                                <p style="font-size: 12px;">PDF</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="books">
+                    <img src="./Binstart-png/ri-2.jpg" alt="White Paper" class="ri_img">
+                    <div class="txt5">
+                        <p class="txt4">Evaluation Pool(2021)</p>
+                        <p class="txt2" style="font-size: 12px;">Read about all of our services</p>
+                        <a href="">
+                            <div class="doc_btn"><i class="fa fa-solid fa-download pdf_itype"></i>
+                                <p style="font-size: 12px;">PDF</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="books">
+                    <img src="./Binstart-png/ri-3.jpg" alt="White Paper" class="ri_img">
+                    <div class="txt5">
+                        <p class="txt4">Utility Token(2021)</p>
+                        <p class="txt2" style="font-size: 12px;">Read about all of our services</p>
+                        <a href="">
+                            <div class="doc_btn"><i class="fa fa-solid fa-download pdf_itype"></i>
+                                <p style="font-size: 12px;">PDF</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="books">
+                    <img src="./Binstart-png/ri-4.jpg" alt="White Paper" class="ri_img">
+                    <div class="txt5">
+                        <p class="txt4">Docs(2021)</p>
+                        <p class="txt2" style="font-size: 12px;">Read about all of our services</p>
+                        <a href="#">
+                            <div class="doc_btn"><i class="fa fa-solid fa-download pdf_itype"></i>
+                                <p style="font-size: 12px;">WEB</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="news_container">
+        <h1 class="news">News</h1>
+        <hr class="hr">
+        <div class="grid_container">
+            <div class="news_img back2">
+                <a href="#"><img src="./Binstart-png/polygon.jpeg" class="img"></a>
+                <div class="blank"></div>
+                <div class="img_box">
+                    <div class="box_1">
+                        <i class="fa fa-solid fa-calendar"></i>
+                        <p>Jul 25-2 min read</p>
+                    </div>
+                    <div class="box_2">
+                        <i class="fa fa-regular fa-heart outline"></i>
+                        <i class="fa fa-solid fa-comment outline"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news_img back1">
+                <a href="#"><img src="./Binstart-png/2.png" class="img"></a>
+                <div class="blank"></div>
+                <div class="img_box">
+                    <div class="box_1">
+                        <i class="fa fa-solid fa-calendar"></i>
+                        <p>Jul 4</p>
+                    </div>
+                    <div class="box_2">
+                        <i class="fa fa-regular fa-heart outline"></i>
+                        <i class="fa fa-solid fa-comment outline"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news_img back2">
+                <a href="#"><img src="./Binstart-png/3.png" class="img"></a>
+                <div class="blank"></div>
+                <div class="img_box">
+                    <div class="box_1">
+                        <i class="fa fa-solid fa-calendar"></i>
+                        <p>Jul 2</p>
+                    </div>
+                    <div class="box_2">
+                        <i class="fa fa-regular fa-heart outline"></i>
+                        <i class="fa fa-solid fa-comment outline"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news_img back1">
+                <a href=""><img src="./Binstart-png/4.png" class="img"></a>
+                <div class="blank"></div>
+                <div class="img_box">
+                    <div class="box_1">
+                        <i class="fa fa-solid fa-calendar"></i>
+                        <p>Jul 23</p>
+                    </div>
+                    <div class="box_2">
+                        <i class="fa fa-regular fa-heart outline"></i>
+                        <i class="fa fa-solid fa-comment outline"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer id="footershow">
+        <div class="footer">
+            <div class="flex">
+                <a href="#"><i class="fab fa-twitter font-type"></i></a>
+                <a href="#"><i class="fab fa-medium-m font-type"></i></a>
+                <a href="#"><i class="fab fa-telegram-plane font-type"></i></a>
+                <a href="#"><i class="fab fa-youtube font-type"></i></a>
+                <a href="#"><i class="fas fa-file-alt font-type"></i></a>
+                <a href="#"><i class="fab fa-github font-type"></i></a>
+            </div>
+            <div class="text-right">
+                <span>COPYRIGHT @ 2021 BINSTATER BSR.</span>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
